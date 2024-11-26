@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>
+        first number:<input type="text" id="firstNumber"/> <br/>
+        second number:<input type="text" id="secondNumber"/> <br/>
+        <button onclick ="addTwoNumber()" id="btnAdd" >ADDITION</button><br/>
+        <button onclick ="mulTwoNumber()" id="btnmul" >MULTIPLICATION</button><br/>
+        <button onclick ="subtractTwoNumber()" id="btnsub" >SUBTRACTION</button><br/>
+        <button onclick ="divideTwoNumber()" id="btndiv" >DIVISION</button><br/>
+        
+        <label id="result"></label>
+
+    </span>
+    <script>
+          function addTwoNumber(){
+        var n1E1 = document.getElementById('firstNumber');
+        console.log(n1E1.value)
+        var n2E2 = document.getElementById('secondNumber');
+        console.log(n2E2.value)
+        var n1 = parseFloat(n1E1.value);
+        var n2 = parseFloat(n2E2.value);
+        var sum =n1+n2;
+        document.getElementById('result').innerText="sum is :" +sum
+        console.log(sum)
+
+      }
+      function mulTwoNumber(){
+        var n1E1 = document.getElementById('firstNumber');
+        console.log(n1E1.value)
+        var n2E2 = document.getElementById('secondNumber');
+        console.log(n2E2.value)
+        var n1 = parseFloat(n1E1.value);
+        var n2 = parseFloat(n2E2.value);
+        var mul =n1*n2;
+        document.getElementById('result').innerText="product is :" +mul
+        console.log(mul)
+
+      }
+      function subtractTwoNumber(){
+        var n1E1 = document.getElementById('firstNumber');
+        console.log(n1E1.value)
+        var n2E2 = document.getElementById('secondNumber');
+        console.log(n2E2.value)
+        var n1 = parseFloat(n1E1.value);
+        var n2 = parseFloat(n2E2.value);
+        
+            var diff =n1-n2;
+        
+        document.getElementById('result').innerText="difference is  :" +diff
+        console.log(diff)
+
+      }
+      function divideTwoNumber(){
+        var n1E1 = document.getElementById('firstNumber');
+        console.log(n1E1.value)
+        var n2E2 = document.getElementById('secondNumber');
+        console.log(n2E2.value)
+        var n1 = parseFloat(n1E1.value);
+        var n2 = parseFloat(n2E2.value);
+        var div =n1/n2;
+        document.getElementById('result').innerText="division  :" +div
+        console.log(div)
+
+      }
+    </script>
+</body>
+</html>
